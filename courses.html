@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Topics - AidFirst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plus-circle"></i>
+                <span>AidFirst</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Topics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>First Aid Topics</h1>
+            <p>Comprehensive guides for emergency response situations</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search first aid topics...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Topics</button>
+                    <button class="filter-btn" data-category="breathing">Breathing</button>
+                    <button class="filter-btn" data-category="wounds">Wounds</button>
+                    <button class="filter-btn" data-category="emergency">Emergency</button>
+                    <button class="filter-btn" data-category="injuries">Injuries</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Grid -->
+    <section class="topics-section">
+        <div class="container">
+            <div class="topics-grid" id="topicsGrid">
+                <!-- CPR Topic -->
+                <div class="topic-card" data-category="breathing emergency">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g48882d1350af5fcb99e6441ee08a577471964bd3b7b3bb466a5c32975abf81505697acaf1dd17775c8bbab8eb1767f00e45bbdf8f882daa9e57e52d64a0e70f0_1280.jpg" alt="CPR first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>CPR (Cardiopulmonary Resuscitation)</h3>
+                        <p>Life-saving technique for cardiac arrest and breathing emergencies</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 2-5 minutes</span>
+                            <span><i class="fas fa-exclamation-triangle"></i> Critical</span>
+                        </div>
+                        <a href="course-details.html?topic=cpr" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Burns Topic -->
+                <div class="topic-card" data-category="injuries wounds">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g570f4007815d3f6bf3aa84932553a066c6e828ae23aa8ca3849c528fadceca721f777b343b2df6ac68456d7652fd1968d62d10640a7a62a421eb970c7b74ae0b_1280.jpg" alt="Burns first aid">
+                        <div class="card-badge injuries">Injuries</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Burns Treatment</h3>
+                        <p>Proper care for thermal, chemical, and electrical burns</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-3 minutes</span>
+                            <span><i class="fas fa-fire"></i> Thermal</span>
+                        </div>
+                        <a href="course-details.html?topic=burns" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Choking Topic -->
+                <div class="topic-card" data-category="breathing emergency">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g98b9d60a324696a4619feb6950c90fbf4aff634046252e2b950a3482263f0a69d86def0c732591d2a90fb66216832dde11e0a92d8f1c9d04a01e8cb4ed668556_1280.jpg" alt="Choking first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choking Rescue</h3>
+                        <p>Heimlich maneuver and airway clearance techniques</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-2 minutes</span>
+                            <span><i class="fas fa-lungs"></i> Airway</span>
+                        </div>
+                        <a href="course-details.html?topic=choking" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bleeding Control Topic -->
+                <div class="topic-card" data-category="wounds emergency">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g21161bdc2ff35cc08f02de65abebc595eaaeea643f24da27afeadb252624ce203ded7b53f336947abc5d7be1584bebb9_1280.jpg" alt="Bleeding control first aid">
+                        <div class="card-badge wounds">Wounds</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bleeding Control</h3>
+                        <p>Methods to stop bleeding and prevent shock</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-5 minutes</span>
+                            <span><i class="fas fa-tint"></i> Hemorrhage</span>
+                        </div>
+                        <a href="course-details.html?topic=bleeding" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Nosebleed Topic -->
+                <div class="topic-card" data-category="wounds">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g9e061bf14e573f31c7425edab71e4e8477f2edacd57123737cab2f3af134e3276d5e936627da48339c8945bdd320ef674d6018224c77f37331b01119938deb4f_1280.jpg" alt="Nosebleed first aid">
+                        <div class="card-badge wounds">Wounds</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nosebleed Treatment</h3>
+                        <p>Simple steps to control and stop nosebleeds safely</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 5-10 minutes</span>
+                            <span><i class="fas fa-head-side-virus"></i> Nasal</span>
+                        </div>
+                        <a href="course-details.html?topic=nosebleed" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Snake Bites Topic -->
+                <div class="topic-card" data-category="emergency injuries">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g9e55f56589c7d77c9daaacaed9f4d0e505b83fafa1bdbcc8c676848527ea68ab301f0bf5c53556b581194b65216e74e1946849785cdef14818974e63b9abc7d8_1280.jpg" alt="Snake bite first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Snake Bite Response</h3>
+                        <p>Critical steps for venomous and non-venomous snake bites</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> Immediate</span>
+                            <span><i class="fas fa-exclamation-circle"></i> Toxic</span>
+                        </div>
+                        <a href="course-details.html?topic=snakebite" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Seizures Topic -->
+                <div class="topic-card" data-category="emergency">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/gab54bcbbf1b3a657cf8f0a2d6940d4acc2a8f92167d7cfd1f017757a29078d0ce91ec1a9f3126e420d4b932a70debbd6c71591f2000c60f46b0929e1c5eca3e7_1280.jpg" alt="Seizure first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seizure Management</h3>
+                        <p>How to safely assist someone having a seizure</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> During episode</span>
+                            <span><i class="fas fa-brain"></i> Neurological</span>
+                        </div>
+                        <a href="course-details.html?topic=seizures" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Fractures Topic -->
+                <div class="topic-card" data-category="injuries">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/gf182260a0aee10ef95c06d957d0342016e008233c8cd709f63a9a223b88387de72caba81f84058e0542aa5758ae5dacc_1280.jpg" alt="Fracture first aid">
+                        <div class="card-badge injuries">Injuries</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fracture Stabilization</h3>
+                        <p>Immobilization techniques for suspected broken bones</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 5-10 minutes</span>
+                            <span><i class="fas fa-bone"></i> Skeletal</span>
+                        </div>
+                        <a href="course-details.html?topic=fractures" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No topics found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>AidFirst</span>
+                    </div>
+                    <p>Empowering communities with life-saving first aid knowledge and skills.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">First Aid Topics</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <ul>
+                        <li><strong>Ghana:</strong> 193 (Ambulance)</li>
+                        <li><strong>Police:</strong> 191</li>
+                        <li><strong>Fire:</strong> 192</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AidFirst. All rights reserved. | Disclaimer: This website provides educational content only and is not a substitute for professional medical training.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - AidFirst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plus-circle"></i>
+                <span>AidFirst</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Topics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Details Section -->
+    <section class="course-details">
+        <div class="container">
+            <!-- Back Button -->
+            <div class="back-nav">
+                <a href="courses.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Topics
+                </a>
+            </div>
+
+            <!-- Course Header -->
+            <div class="course-header" id="courseHeader">
+                <div class="course-image">
+                    <img id="courseImage" src="" alt="">
+                </div>
+                <div class="course-info">
+                    <h1 id="courseTitle">Loading...</h1>
+                    <p id="courseDescription">Loading course details...</p>
+                    <div class="course-meta">
+                        <span id="courseDuration"><i class="fas fa-clock"></i> Loading...</span>
+                        <span id="courseSeverity"><i class="fas fa-exclamation-triangle"></i> Loading...</span>
+                        <span id="courseCategory"><i class="fas fa-tag"></i> Loading...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Content -->
+            <div class="course-content">
+                <!-- What It Is Section -->
+                <div class="content-section">
+                    <h2 class="section-toggle" data-section="what-it-is">
+                        <i class="fas fa-chevron-down"></i>
+                        What It Is
+                    </h2>
+                    <div class="section-content" id="what-it-is">
+                        <p id="whatItIsContent">Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Symptoms/Risk Section -->
+                <div class="content-section">
+                    <h2 class="section-toggle" data-section="symptoms">
+                        <i class="fas fa-chevron-down"></i>
+                        Symptoms & Risk Factors
+                    </h2>
+                    <div class="section-content" id="symptoms">
+                        <ul id="symptomsContent">
+                            <li>Loading...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- First Aid Steps Section -->
+                <div class="content-section">
+                    <h2 class="section-toggle" data-section="steps">
+                        <i class="fas fa-chevron-down"></i>
+                        First Aid Steps
+                    </h2>
+                    <div class="section-content" id="steps">
+                        <div class="steps-container" id="stepsContent">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">Loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Needed Section -->
+                <div class="content-section">
+                    <h2 class="section-toggle" data-section="tools">
+                        <i class="fas fa-chevron-down"></i>
+                        Tools & Equipment Needed
+                    </h2>
+                    <div class="section-content" id="tools">
+                        <div class="tools-grid" id="toolsContent">
+                            <div class="tool-item">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warning Section -->
+                <div class="content-section warning-section">
+                    <h2 class="section-toggle" data-section="warnings">
+                        <i class="fas fa-chevron-down"></i>
+                        Important Warnings
+                    </h2>
+                    <div class="section-content" id="warnings">
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div id="warningsContent">
+                                <p>Loading warnings...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- When to Call Emergency Services -->
+                <div class="content-section emergency-section">
+                    <h2 class="section-toggle" data-section="emergency">
+                        <i class="fas fa-chevron-down"></i>
+                        When to Call Emergency Services
+                    </h2>
+                    <div class="section-content" id="emergency">
+                        <div class="emergency-box">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call 193 (Ghana Ambulance) immediately if:</h4>
+                                <ul id="emergencyContent">
+                                    <li>Loading...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="course-actions">
+                <button class="action-btn primary" onclick="window.print()">
+                    <i class="fas fa-download"></i>
+                    Download Steps
+                </button>
+                <button class="action-btn secondary" onclick="practiceMode()">
+                    <i class="fas fa-play"></i>
+                    Practice Mode
+                </button>
+                <button class="action-btn tertiary" onclick="shareContent()">
+                    <i class="fas fa-share"></i>
+                    Share
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Topics -->
+    <section class="related-topics">
+        <div class="container">
+            <h2>Related Topics</h2>
+            <div class="related-grid" id="relatedTopics">
+                <!-- Related topics will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>AidFirst</span>
+                    </div>
+                    <p>Empowering communities with life-saving first aid knowledge and skills.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">First Aid Topics</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <ul>
+                        <li><strong>Ghana:</strong> 193 (Ambulance)</li>
+                        <li><strong>Police:</strong> 191</li>
+                        <li><strong>Fire:</strong> 192</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AidFirst. All rights reserved. | Disclaimer: This website provides educational content only and is not a substitute for professional medical training.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
